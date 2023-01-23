@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RJGaming</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./dist/bundle.css" />    
+  </head>
+
+  <body>
+
+    <!-- <a href="#home">Home</a> <br>
+    <a href="#pagelist">PageList</a><br>
+    <a href="#pagedetail">PageDetail</a><br> 
+    <a href="#pagelist/borderlands">PageList borderlands</a> -->
+
+
+    <div class="heading--top">
+      <a href="#pagelist/">
+        <h1 class="a--underlined" >RJGaming</h1>
+      </a>
+      <div class="search-module">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+        <input type="text" id="site-search" placeholder="Find a game...">
+      </div>
+    </div>
+    <div class="heading--bottom">
+      <h1 class="heading--bottom__title">Bienvenue</h1>
+      <p class="heading--bottom__paragraph">
+        RJGaming Shot répertorie tous les jeux de beaucoup de console. Il te donne des descriptions et des vidéos pour te rendre compte de leurs potentiel. Tu pourras aussi trouver des liens où tu peux les acheter. 
+        Bonne visite
+      </p>
+    </div>
+    <div class="games">
+      <div class="games--dropdown">
+        <label for="platforms">Platforme:&nbsp;</label>
+        <select id="platform" name="platform" onchange="window.location.href=`#pagelist/&platforms=${this.value}`">
+          <option value="">Toutes</option>
+          <option value="1">PC</option>
+          <option value="18">PlayStation</option>
+          <option value="3">Xbox</option>
+          <option value="5">MacOs</option>
+          <option value="7">Nintendo</option>
+          <option value="8">Android</option>
+        </select>
+        <div class="games--dropdownlogos">
+        </div>
+      </div>
+      <section id="pageContent">Choisissez un lien</section>
+    </div>
+    <div class="game-more">
+      <button id="show-more" >Plus</button>
+    </div>
+    <div class="rectangle" style="width: 139px; height: 10px; left: 50px; top: 1566px; background: #39d20a;"></div>
+    <div class="footer">
+     <a href="https://github.com/widmaker666"> <p>vers github</p></a>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/09df9c0f6f.js" crossorigin="anonymous"></script>
+
+    <script src="./dist/bundle.js"></script>
+    
+  </body>
+</html>
